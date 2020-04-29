@@ -32,19 +32,19 @@
     },
     "storageAccount": {
       "type": "string",
-      "defaultValue": "[concat(toLower(parameters('baseName')), 'amlsangus')]"
+      "defaultValue": "[concat(toLower(parameters('baseName')), 'amlsa')]"
     },
     "keyvault": {
       "type": "string",
-      "defaultValue": "[concat(parameters('baseName'),'-AML-KV-angus')]"
+      "defaultValue": "[concat(parameters('baseName'),'-AML-KV')]"
     },
     "appInsights": {
       "type": "string",
-      "defaultValue": "[concat(parameters('baseName'),'-AML-AI-angus')]"
+      "defaultValue": "[concat(parameters('baseName'),'-AML-AI')]"
     },
     "acr": {
       "type": "string",
-      "defaultValue": "[concat(toLower(parameters('baseName')),'amlcrangus')]"
+      "defaultValue": "[concat(toLower(parameters('baseName')),'amlcr')]"
     }
   },
   "variables": {
