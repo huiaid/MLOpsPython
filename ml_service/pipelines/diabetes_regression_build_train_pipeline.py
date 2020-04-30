@@ -12,6 +12,8 @@ import os
 
 def main():
     e = Env()
+    print("Printing out Environment Variable.")
+    print(e)
     # Get Azure machine learning workspace
     aml_workspace = Workspace.get(
         name=e.workspace_name,
