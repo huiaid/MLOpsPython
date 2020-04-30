@@ -13,7 +13,9 @@ import os
 def main():
     e = Env()
     print("Printing out Environment Variable.")
-    #pprint.pprint(dict(env), width = 1) 
+    for k, v in os.environ.items():
+       print(f'{k}={v}')
+    #pprint.pprint(dict(env), width = 1)
     # Get Azure machine learning workspace
     aml_workspace = Workspace.get(
         name=e.workspace_name,
