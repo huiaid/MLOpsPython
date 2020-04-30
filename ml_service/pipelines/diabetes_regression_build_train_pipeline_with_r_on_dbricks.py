@@ -7,6 +7,7 @@ from ml_service.util.env_variables import Env
 
 def main():
     e = Env()
+    print(e)
     # Get Azure machine learning workspace
     aml_workspace = Workspace.get(
         name=e.workspace_name,
