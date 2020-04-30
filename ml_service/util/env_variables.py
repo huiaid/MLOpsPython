@@ -14,7 +14,7 @@ class Singleton(object):
 class Env(Singleton):
 
     def __init__(self):
-        load_dotenv()
+        load_dotenv(verbose=True)
         self._workspace_name = os.environ.get("WORKSPACE_NAME")
         self._resource_group = os.environ.get("RESOURCE_GROUP")
         self._subscription_id = os.environ.get("SUBSCRIPTION_ID")
